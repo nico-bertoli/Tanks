@@ -11,9 +11,22 @@ public class Bullet : MonoBehaviour
     }
 
     public void SetSpeed(Vector3 speed) {
-        Debug.Log("speed: " + speed);
-
         myRigidbody.velocity = speed;
+    }
+
+    private void Update() {
+        if (myRigidbody.velocity.x > 0)
+            transform.up = myRigidbody.velocity;
+    }
+
+    private void OnCollisionEnter(Collision other) {
+        Debug.Log("collision");
+        if(other.gameObject.tag == "Enemy") {
+            Destroy(other.gameObject);
+            Debug.Log("enemy hit");
+        }
+           
+        Destroy(this.gameObject);
     }
 
 }

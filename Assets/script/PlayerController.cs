@@ -28,5 +28,10 @@ public class PlayerController : MonoBehaviour
         else
             barrel.shot();
     }
-
+    public void OnIncreaseBulletSpeed(InputValue value) {
+        barrel.IncreaseBulletSpeed();
+    }
+    public void OnDecreaseBulletSpeed(InputValue value) {
+        barrel.DecreaseBulletSpeed();
+    }
 }
