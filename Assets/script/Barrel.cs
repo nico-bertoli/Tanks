@@ -45,9 +45,9 @@ public class Barrel : MonoBehaviour {
     }
 
     //https://www.youtube.com/watch?v=3DUmpVi82q8&ab_channel=TheGameGuy
+    // predicts points where the bullet will be
     Vector3 PointPosition(float t) {
-        Vector3 risPos = (Vector3) bulletInstantiationPosition.transform.position + (BulletSpeed * transform.up *t) + 0.5f * Physics.gravity * (t*t);
-        return risPos;
+        return (Vector3) bulletInstantiationPosition.transform.position + (BulletSpeed * transform.up *t) + 0.5f * Physics.gravity * (t*t);
     }
 
     private void Update() {
