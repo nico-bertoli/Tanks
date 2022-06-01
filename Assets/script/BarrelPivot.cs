@@ -10,6 +10,11 @@ public class BarrelPivot : MonoBehaviour
     [SerializeField] float maxRotation;
     public Vector2 moveInput { get; set; }
 
+
+    private void Start() {
+        moveInput = new Vector2(0, 0);
+    }
+
     private void Update() {
         Move();
     }

@@ -100,13 +100,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596169538}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.799, y: -0.006, z: -0}
-  m_LocalScale: {x: 0.08104803, y: 0.3392781, z: 0.11780087}
+  m_LocalRotation: {x: 3.2927217e-10, y: 1.6463608e-10, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.1612899, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9191411246013971251}
-  m_RootOrder: 1
+  m_Father: {fileID: 9191411244122364814}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &9191411244122364813
 GameObject:
@@ -138,7 +138,8 @@ Transform:
   m_LocalPosition: {x: 0.405, y: -0.006, z: -0}
   m_LocalScale: {x: 0.08104803, y: 0.3392781, z: 0.11780087}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1596169539}
   m_Father: {fileID: 9191411246013971251}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
@@ -205,8 +206,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 9182207395692446977, guid: 491fce4dbacfad349a9ccf3ed6c6a0d3, type: 3}
-  bulletInstantiationPositionGameObject: {fileID: 1596169538}
+  bulletInstantiationPosition: {fileID: 0}
   BulletSpeed: 100
+  speedChangeAmmount: 0
+  bulletPathPointsNum: 0
+  BulletPathPointPrefab: {fileID: 0}
 --- !u!1 &9191411245112907843
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,16 +436,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9191411246013971250}
-  m_LocalRotation: {x: -0.002257551, y: 0.0023498686, z: 0.1580521, w: 0.98742545}
+  m_LocalRotation: {x: -0.0018107948, y: 0.0027091405, z: 0.32865378, w: 0.9444449}
   m_LocalPosition: {x: 0.17, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9191411244122364814}
-  - {fileID: 1596169539}
   m_Father: {fileID: 9191411245112907844}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -0.298, y: 0.225, z: 18.187}
+  m_LocalEulerAnglesHint: {x: -0.298, y: 0.225, z: 38.374}
 --- !u!114 &9191411246013971253
 MonoBehaviour:
   m_ObjectHideFlags: 0
